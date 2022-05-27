@@ -108,15 +108,16 @@ def generate_percentage(predictions):
 def API(movieName):
     url = f'https://omdbapi.com/?t={movieName}&apikey=cb28b445'
     res = requests.get(url)
-
+   
     data = res.json()
-    try:
+    if data is not "":
         imdb_rating = data['imdbRating']
-    except:
-        imdb_rating = ""
         
-    imdb_id = data["imdbID"]
-    boxoffice = data['BoxOffice']
+        imdb_id = data["imdbID"]
+        boxoffice = data['BoxOffice']
+    else:
+        imdb_rating,imdb_id,boxoffice = "", "", ""
+        
     return imdb_rating,imdb_id,boxoffice
 
 
