@@ -110,7 +110,11 @@ def API(movieName):
     res = requests.get(url)
 
     data = res.json()
-    imdb_rating = data['imdbRating']
+    try:
+        imdb_rating = data['imdbRating']
+    except:
+        imdb_rating = ""
+        
     imdb_id = data["imdbID"]
     boxoffice = data['BoxOffice']
     return imdb_rating,imdb_id,boxoffice
