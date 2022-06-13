@@ -2,7 +2,7 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/abhayparashar31/movie_recommender_system_with_sentiment_analysis/main/app.py)
  
  ### Find your next movie with us.
- ![streamlit app gif](data/op.gif)
+ <img src="data/op.gif" width="100%"/>
 
 
 
