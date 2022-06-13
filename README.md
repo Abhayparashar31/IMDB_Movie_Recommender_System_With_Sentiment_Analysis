@@ -2,7 +2,8 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/abhayparashar31/movie_recommender_system_with_sentiment_analysis/main/app.py)
  
  ### Find your next movie with us.
- ![streamlit app gif](data/op.gif)
+ <img src='data/op.gif' width=300/>
+
 
 
 ### Features
@@ -16,11 +17,11 @@
 [Try it Now](https://share.streamlit.io/abhayparashar31/movie_recommender_system_with_sentiment_analysis/main/app.py)
 
 ### Images
-![movieinfo](data/img1.png)
-![diduknow](data/img2.png)
-![single recommended_info](data/img3.png)
-![single_recommended_reviews](data/img4.png)
-![last_5](data/img5.png)
+<img src='data/img1.png' width=300/>
+<img src='data/img2.png' width=300/>
+<img src='data/img3.png' width=300/>
+<img src='data/img4.png' width=300/>
+<img src='data/img5.png' width=300/>
 
 ## Contributing
 
