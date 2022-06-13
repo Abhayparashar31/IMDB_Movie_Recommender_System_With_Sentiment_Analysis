@@ -17,11 +17,11 @@
 [Try it Now](https://share.streamlit.io/abhayparashar31/movie_recommender_system_with_sentiment_analysis/main/app.py)
 
 ### Images
-<img src='data/img1.png' width=300/>
-<img src='data/img2.png' width=300/>
-<img src='data/img3.png' width=300/>
-<img src='data/img4.png' width=300/>
-<img src='data/img5.png' width=300/>
+<img src='data/img1.png' width=400/>
+<img src='data/img2.png' width=400/>
+<img src='data/img3.png' width=400/>
+<img src='data/img4.png' width=400/>
+<img src='data/img5.png' width=400/>
 
 ## Contributing
 
