@@ -5,9 +5,7 @@ import imdb_scraper as imdb
 import hydralit_components as hc
 import time
 
-
-
-### Giving Titlle and Subtitle To Our Web App
+### Adding Title and Subtitle For Web App
 st.title('Movie Recommender System')
 st.text('A System That Recommend Movies For User.')
 
