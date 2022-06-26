@@ -5,6 +5,7 @@ import imdb_scraper as imdb
 import hydralit_components as hc
 import time
 import json
+from streamlit_lottie import st_lottie
 
 st.set_page_config(
     page_title = "IMDB Movies Recommender System",
