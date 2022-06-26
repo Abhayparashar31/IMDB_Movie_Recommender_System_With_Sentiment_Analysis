@@ -40,8 +40,6 @@ st_lottie(
 
 ### Adding Title and Subtitle For Web App
 st.markdown('''# **IMDB Movies Recommender System**''')
-#st.text('')
-
 
 
 ### Unpickling Pickled Data
