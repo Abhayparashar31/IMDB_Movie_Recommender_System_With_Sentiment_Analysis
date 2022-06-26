@@ -40,7 +40,7 @@ st_lottie(
 
 ### Adding Title and Subtitle For Web App
 st.markdown('''# **IMDB Movies Recommender System**''')
-st.text('Choose The Latest Movie You Have Watched From The List.')
+#st.text('')
 
 
 
@@ -50,7 +50,7 @@ similarity = pickle.load(open('similarity_tf.pkl','rb'))
 
 
 #### Dropdown input For Selecting a Movie
-movie_name = st.selectbox('',df['title'].values)
+movie_name = st.selectbox('Choose The Latest Movie You Have Watched From The List.',df['title'].values)
 
 def fetch_user_input_movie_details(movieName):
 
