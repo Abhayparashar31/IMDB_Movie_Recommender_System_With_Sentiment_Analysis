@@ -21,12 +21,6 @@ st.markdown(
 )
 
 
-
-
-### Adding Title and Subtitle For Web App
-st.markdown('''# **IMDB Movies Recommender System**''')
-st.text('A System That Recommend Movies For User.')
-
 ### pip install streamlit_lotte
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
@@ -44,13 +38,19 @@ st_lottie(
 
 
 
+### Adding Title and Subtitle For Web App
+st.markdown('''# **IMDB Movies Recommender System**''')
+st.text('Choose The Latest Movie You Have Watched From The List.')
+
+
+
 ### Unpickling Pickled Data
 df = pickle.load(open('df.pkl','rb'))
 similarity = pickle.load(open('similarity_tf.pkl','rb'))
 
 
 #### Dropdown input For Selecting a Movie
-movie_name = st.selectbox('Choose The Latest Movie You Have Watched From The List.',df['title'].values)
+movie_name = st.selectbox('',df['title'].values)
 
 def fetch_user_input_movie_details(movieName):
 
