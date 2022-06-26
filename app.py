@@ -228,16 +228,14 @@ def recommend_movies(movie_name):
 movie_index,poster,movie_name,genre,cast,overview,director,minutes,runtime,release_date,imdb_rating,imdb_id,boxoffice,trivia = fetch_user_input_movie_details(movie_name)
 colA,colB = st.columns(2)
 with colA:
-    st.write('***')
-    st.markdown(''' 
-    <hr style='border-top: 1px solid #8c8b8b;'>
-    ''')
+    st.markdown('''<hr style='border-top: 1px solid #E3912E;'>''',unsafe_allow_html=True)
+    st.write('\n')
     st.image(poster)
-    st.markdown(''' 
-    <hr style='border-top: 1px solid #8c8b8b;'>
-    ''')
+    st.markdown('''<hr style='border-top: 1px solid #E3912E;'>''',unsafe_allow_html=True)
+    
 with colB:
     st.subheader(movie_name)
+    st.write('\n')
     st.write('IMDB ID: ',imdb_id)
     st.write(''' **Overview**:''',overview)
     st.write('**Release Date**:',release_date)
@@ -275,9 +273,10 @@ if recommend:
         col1,col2 = st.columns(2)
 
         with col1:
-            st.write(' --- \n')
+            st.markdown('''<hr style='border-top: 1px solid yellow;'>''',unsafe_allow_html=True)
+            st.write('\n')
             st.image(movie_posters[i])
-            st.write(' --- \n')
+            st.markdown('''<hr style='border-top: 1px solid yellow;'>''',unsafe_allow_html=True)
 
         with col2:
             st.subheader(movie_names[i])
@@ -317,7 +316,9 @@ if recommend:
             st.write('''**Review 5**''')
             st.write(reviews[i][4][:150])    ### First Review of i th movie
             st.write('\n**Kind**:',predictions[i][4])
-        st.write(' --- \n')
+        if i<4:
+            st.markdown('''<hr style='border-top: 1px solid #dadde3;'>''',unsafe_allow_html=True)
+    st.markdown('''<hr style='border-top: 1px solid green;'>''',unsafe_allow_html=True)
 
 ############ LAST FIVE ##########
 
@@ -337,7 +338,7 @@ if recommend:
 
     movies_sex_to_ten,movies_posters_six_to_ten = last_five(movie_name)
     st.subheader('OTHERS RECOMMENDED MOVIES YOU MIGHT LIKE 👍')
-    st.write(' --- \n')
+    st.markdown('''<hr style='border-top: 1px solid green;'>''',unsafe_allow_html=True)
     cola,colb,colc,cold,cole = st.columns(5)
     with cola:
         st.image(movies_posters_six_to_ten[0])
@@ -354,7 +355,7 @@ if recommend:
     with cole:
         st.image(movies_posters_six_to_ten[4])
         st.text(movies_sex_to_ten[4])  
-    st.write(' --- \n')
+    st.markdown('''<hr style='border-top: 1px dashed white;'>''',unsafe_allow_html=True)
 
 
 with st.expander("Know About The Creator"):
