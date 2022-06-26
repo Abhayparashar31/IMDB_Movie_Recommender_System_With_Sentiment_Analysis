@@ -229,7 +229,7 @@ def recommend_movies(movie_name):
 movie_index,poster,movie_name,genre,cast,overview,director,minutes,runtime,release_date,imdb_rating,imdb_id,boxoffice,trivia = fetch_user_input_movie_details(movie_name)
 colA,colB = st.columns(2)
 with colA:
-    st.markdown(""" *** """)
+    st.write(":heavy_minus_sign:" * 34) 
     st.image(poster)
     st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
 with colB:
