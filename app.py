@@ -17,8 +17,7 @@ st.markdown(
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     """,
-    unsafe_allow_html=True,
-)
+    unsafe_allow_html=True )
 
 
 ### pip install streamlit_lotte
@@ -229,9 +228,14 @@ def recommend_movies(movie_name):
 movie_index,poster,movie_name,genre,cast,overview,director,minutes,runtime,release_date,imdb_rating,imdb_id,boxoffice,trivia = fetch_user_input_movie_details(movie_name)
 colA,colB = st.columns(2)
 with colA:
-    st.write(":heavy_minus_sign:" * 34) 
+    st.write('***')
+    st.markdown(''' 
+    <hr style='border-top: 1px solid #8c8b8b;'>
+    ''')
     st.image(poster)
-    st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
+    st.markdown(''' 
+    <hr style='border-top: 1px solid #8c8b8b;'>
+    ''')
 with colB:
     st.subheader(movie_name)
     st.write('IMDB ID: ',imdb_id)
@@ -271,9 +275,9 @@ if recommend:
         col1,col2 = st.columns(2)
 
         with col1:
-            st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
+            st.write(' --- \n')
             st.image(movie_posters[i])
-            st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
+            st.write(' --- \n')
 
         with col2:
             st.subheader(movie_names[i])
@@ -333,7 +337,7 @@ if recommend:
 
     movies_sex_to_ten,movies_posters_six_to_ten = last_five(movie_name)
     st.subheader('OTHERS RECOMMENDED MOVIES YOU MIGHT LIKE 👍')
-    st.markdown("""---""")
+    st.write(' --- \n')
     cola,colb,colc,cold,cole = st.columns(5)
     with cola:
         st.image(movies_posters_six_to_ten[0])
@@ -350,7 +354,7 @@ if recommend:
     with cole:
         st.image(movies_posters_six_to_ten[4])
         st.text(movies_sex_to_ten[4])  
-    st.markdown("""---""") 
+    st.write(' --- \n')
 
 
 with st.expander("Know About The Creator"):
