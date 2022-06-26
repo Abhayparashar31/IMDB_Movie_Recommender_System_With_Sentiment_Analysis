@@ -1,5 +1,5 @@
 # MOVIE RECOMMENDER SYSTEM WITH SENTIMENT ANALYSIS
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/abhayparashar31/movie_recommender_system_with_sentiment_analysis/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://abhayparashar31-imdb-movie-recommender-system-with-s-app-307h8f.streamlitapp.com)
  
  ### Find your next movie with us.
  <img src="data/op.gif" width="100%"/>
