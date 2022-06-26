@@ -229,9 +229,9 @@ def recommend_movies(movie_name):
 movie_index,poster,movie_name,genre,cast,overview,director,minutes,runtime,release_date,imdb_rating,imdb_id,boxoffice,trivia = fetch_user_input_movie_details(movie_name)
 colA,colB = st.columns(2)
 with colA:
-    st.write(' --- \n')
+    st.markdown("""---""")
     st.image(poster)
-    st.write(' --- \n')
+    st.markdown("""---""")
 with colB:
     st.subheader(movie_name)
     st.write('IMDB ID: ',imdb_id)
@@ -271,9 +271,9 @@ if recommend:
         col1,col2 = st.columns(2)
 
         with col1:
-            st.write(' --- \n')
+            st.markdown("""---""")
             st.image(movie_posters[i])
-            st.write(' --- \n')
+            st.markdown("""---""")
 
         with col2:
             st.subheader(movie_names[i])
@@ -333,7 +333,7 @@ if recommend:
 
     movies_sex_to_ten,movies_posters_six_to_ten = last_five(movie_name)
     st.subheader('OTHERS RECOMMENDED MOVIES YOU MIGHT LIKE 👍')
-    st.write(' ---')
+    st.markdown("""---""")
     cola,colb,colc,cold,cole = st.columns(5)
     with cola:
         st.image(movies_posters_six_to_ten[0])
@@ -350,7 +350,7 @@ if recommend:
     with cole:
         st.image(movies_posters_six_to_ten[4])
         st.text(movies_sex_to_ten[4])  
-    st.write(' ---')  
+    st.markdown("""---""") 
 
 
 with st.expander("Know About The Creator"):
