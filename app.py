@@ -229,9 +229,9 @@ def recommend_movies(movie_name):
 movie_index,poster,movie_name,genre,cast,overview,director,minutes,runtime,release_date,imdb_rating,imdb_id,boxoffice,trivia = fetch_user_input_movie_details(movie_name)
 colA,colB = st.columns(2)
 with colA:
-    st.markdown("""――――――――――――――――――――――――――――――――――――――――――――――――――――""")
+    st.markdown(""" *** """)
     st.image(poster)
-    st.markdown("""<hr style="height:25px; border:2px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
+    st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
 with colB:
     st.subheader(movie_name)
     st.write('IMDB ID: ',imdb_id)
@@ -271,9 +271,9 @@ if recommend:
         col1,col2 = st.columns(2)
 
         with col1:
-            st.markdown("""---""")
+            st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
             st.image(movie_posters[i])
-            st.markdown("""---""")
+            st.markdown("""<hr style="height:50px; border:10px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
 
         with col2:
             st.subheader(movie_names[i])
