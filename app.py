@@ -4,6 +4,7 @@ import requests
 import imdb_scraper as imdb
 import hydralit_components as hc
 import time
+import json
 
 st.set_page_config(
     page_title = "IMDB Movies Recommender System",
@@ -19,10 +20,25 @@ st.markdown(
 )
 
 
+
+
 ### Adding Title and Subtitle For Web App
-st.title('Movie Recommender System')
+st.markdown('''# **IMDB Movies Recommender System**''')
 st.text('A System That Recommend Movies For User.')
-st.image('data/home.gif')
+
+
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+lottie_coding = load_lottiefile("data/home.json")
+st_lottie(
+    lottie_coding,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low",height=200
+)
 
 ### Unpickling Pickled Data
 df = pickle.load(open('df.pkl','rb'))
