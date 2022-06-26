@@ -231,7 +231,7 @@ colA,colB = st.columns(2)
 with colA:
     st.markdown("""――――――――――――――――――――――――――――――――――――――――――――――――――――""")
     st.image(poster)
-    st.markdown("""<hr style="height:10px;border:none;color:#ffffff;background-color:#ffffff;" /> """, unsafe_allow_html=True)
+    st.markdown("""<hr style="height:25px; border:2px solid white; color:#ffffff; background-color:#ffffff;" /> """, unsafe_allow_html=True)
 with colB:
     st.subheader(movie_name)
     st.write('IMDB ID: ',imdb_id)
