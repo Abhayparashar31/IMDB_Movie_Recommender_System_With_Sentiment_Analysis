@@ -34,7 +34,7 @@ Contributions are always welcome!!!!
 
 Date | Info | 
 ------------ | -------------
-20 June 2022 | Added New Fonts, Gifs, and Changed Look of webpage
+20 June 2022 | Added New Fonts, Gifs, and Changed The Overall Look of webpage
 02 June 2022 | Solved The Issue of Empty List Whenever APIs Doesn't have data for the movie.
 25 May  2022 | Added `Did You Know` Feature For The Web App Contaning Interesting Facts About Movies Using Web Scraping. 
 20 Apr  2022 | Build a NLP Model in IMDB 50k Dataset To Perform Sentiment Analysis On Movie Reviews.
