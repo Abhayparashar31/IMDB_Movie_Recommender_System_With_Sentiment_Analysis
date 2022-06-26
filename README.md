@@ -36,7 +36,7 @@ Date | Info |
 ------------ | -------------
 20 June 2022 | Added New Fonts, Gifs, and Changed Look of webpage
 02 June 2022 | Solved The Issue of Empty List Whenever APIs Doesn't have data for the movie.
-25 May  2022 | Added `Did You Know` Feature For The Web App Contaning Interesting Facts About Movie Using Web Scraping. 
+25 May  2022 | Added `Did You Know` Feature For The Web App Contaning Interesting Facts About Movies Using Web Scraping. 
 20 Apr  2022 | Build a NLP Model in IMDB 50k Dataset To Perform Sentiment Analysis On Movie Reviews.
 12 Apr  2022 | Scraped Recommended Movies Reviews To Showcase Top Reviews On The Web Page. 
 25 Mar  2022 | Used Cleaned Data To Recommende Movies Using Cosine Similarity.
